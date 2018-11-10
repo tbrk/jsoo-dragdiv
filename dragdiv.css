@@ -1,0 +1,51 @@
+
+div.dragdiv-window {
+  border: 1px black solid;
+  background-color: powderblue;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+  box-shadow: 5px 5px 20px gray;
+}
+
+div.dragdiv-title {
+  padding-left: 2px;
+  padding-right: 2px;
+  border-bottom: 1px black solid;
+  min-height: 1.25em;
+  font-size: x-small;
+  flex: 0;
+}
+
+div.dragdiv-content {
+  padding: 2px;
+  margin: 0px;
+  left: 0;
+  right: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  border-radius: 0px 0px 5px 5px;
+}
+
+div.dragdiv-close {
+  padding: 0;
+  width: 1.5em;
+  text-align: center;
+}
+
+div.dragdiv-close:after {
+  display: inline-block;
+  content: "\00d7";
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
